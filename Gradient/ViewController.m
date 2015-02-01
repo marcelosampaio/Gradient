@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Gradient.h"
 
 @interface ViewController ()
 
@@ -16,12 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    CAGradientLayer *gradientLayer = [Gradient makeGradient];
+    gradientLayer.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    [self.view.layer insertSublayer:gradientLayer atIndex:0];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
 }
 
 @end

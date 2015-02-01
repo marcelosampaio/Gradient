@@ -14,6 +14,11 @@
 		9C2DFA581A7D96BA0057107D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C2DFA571A7D96BA0057107D /* Images.xcassets */; };
 		9C2DFA5B1A7D96BA0057107D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C2DFA591A7D96BA0057107D /* LaunchScreen.xib */; };
 		9C2DFA671A7D96BA0057107D /* GradientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2DFA661A7D96BA0057107D /* GradientTests.m */; };
+		9C2DFA741A7D9B6F0057107D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C2DFA731A7D9B6F0057107D /* QuartzCore.framework */; };
+		9C2DFA761A7D9B7F0057107D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C2DFA751A7D9B7F0057107D /* CoreGraphics.framework */; };
+		9C2DFA781A7D9B950057107D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C2DFA771A7D9B950057107D /* UIKit.framework */; };
+		9C2DFA7A1A7D9B9B0057107D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C2DFA791A7D9B9B0057107D /* Foundation.framework */; };
+		9C2DFA801A7DA2650057107D /* Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2DFA7F1A7DA2650057107D /* Gradient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,12 @@
 		9C2DFA601A7D96BA0057107D /* GradientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C2DFA651A7D96BA0057107D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C2DFA661A7D96BA0057107D /* GradientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GradientTests.m; sourceTree = "<group>"; };
+		9C2DFA731A7D9B6F0057107D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9C2DFA751A7D9B7F0057107D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9C2DFA771A7D9B950057107D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9C2DFA791A7D9B9B0057107D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9C2DFA7E1A7DA2650057107D /* Gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gradient.h; sourceTree = "<group>"; };
+		9C2DFA7F1A7DA2650057107D /* Gradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gradient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +58,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C2DFA7A1A7D9B9B0057107D /* Foundation.framework in Frameworks */,
+				9C2DFA781A7D9B950057107D /* UIKit.framework in Frameworks */,
+				9C2DFA761A7D9B7F0057107D /* CoreGraphics.framework in Frameworks */,
+				9C2DFA741A7D9B6F0057107D /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,13 +96,12 @@
 		9C2DFA491A7D96B90057107D /* Gradient */ = {
 			isa = PBXGroup;
 			children = (
-				9C2DFA4E1A7D96BA0057107D /* AppDelegate.h */,
-				9C2DFA4F1A7D96BA0057107D /* AppDelegate.m */,
-				9C2DFA511A7D96BA0057107D /* ViewController.h */,
-				9C2DFA521A7D96BA0057107D /* ViewController.m */,
-				9C2DFA541A7D96BA0057107D /* Main.storyboard */,
-				9C2DFA571A7D96BA0057107D /* Images.xcassets */,
-				9C2DFA591A7D96BA0057107D /* LaunchScreen.xib */,
+				9C2DFA861A7DA74B0057107D /* Images */,
+				9C2DFA851A7DA73E0057107D /* Controllers */,
+				9C2DFA841A7DA7310057107D /* Classes */,
+				9C2DFA831A7DA7250057107D /* Root */,
+				9C2DFA821A7DA70D0057107D /* User Interface */,
+				9C2DFA811A7DA6FC0057107D /* Frameworks */,
 				9C2DFA4A1A7D96B90057107D /* Supporting Files */,
 			);
 			path = Gradient;
@@ -117,6 +131,61 @@
 				9C2DFA651A7D96BA0057107D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C2DFA811A7DA6FC0057107D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C2DFA791A7D9B9B0057107D /* Foundation.framework */,
+				9C2DFA771A7D9B950057107D /* UIKit.framework */,
+				9C2DFA751A7D9B7F0057107D /* CoreGraphics.framework */,
+				9C2DFA731A7D9B6F0057107D /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C2DFA821A7DA70D0057107D /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				9C2DFA541A7D96BA0057107D /* Main.storyboard */,
+				9C2DFA591A7D96BA0057107D /* LaunchScreen.xib */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
+		9C2DFA831A7DA7250057107D /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				9C2DFA4E1A7D96BA0057107D /* AppDelegate.h */,
+				9C2DFA4F1A7D96BA0057107D /* AppDelegate.m */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
+		9C2DFA841A7DA7310057107D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9C2DFA7E1A7DA2650057107D /* Gradient.h */,
+				9C2DFA7F1A7DA2650057107D /* Gradient.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		9C2DFA851A7DA73E0057107D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9C2DFA511A7D96BA0057107D /* ViewController.h */,
+				9C2DFA521A7D96BA0057107D /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9C2DFA861A7DA74B0057107D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9C2DFA571A7D96BA0057107D /* Images.xcassets */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +291,7 @@
 				9C2DFA531A7D96BA0057107D /* ViewController.m in Sources */,
 				9C2DFA501A7D96BA0057107D /* AppDelegate.m in Sources */,
 				9C2DFA4D1A7D96B90057107D /* main.m in Sources */,
+				9C2DFA801A7DA2650057107D /* Gradient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
